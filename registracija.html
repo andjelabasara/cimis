@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cimy | Registracija </title>
+    <link rel="shorcut icon" href="images/logo2.ico">
+    <link rel="stylesheet" href="css/registracija.css">
+    <script  src="js/registracija.js"></script>
+</head>
+<body>
+    <!--Header-odnosi na meni i isti je na svakoj strani sajta. Klikom na logo odlazi se na pocetnu stranu sajta-->
+    <header>
+        <div class="container">
+
+            <div class="logo">
+              <a href="index.html"> <img src="images/logo.png" alt="Logo">
+            </a> 
+            </div>
+
+            <nav class="nav">
+                <ul class="lista">
+                    <li ><a href="index.html">pocetna</a></li>
+                    <li><a href="info.html">ko smo mi?</a></li>
+                    <li><a href="meni.html">meni</a></li>
+                    <li><a href="rezervacija.html">rezervacija</a> </li>
+                    <li class="current"><a href="registracija.html">registracija</a> </li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+
+    <!--Ovaj deo je drugaciji za svaku stranu-->
+
+    <div id="login-box">
+        <div class="left" >
+          
+          <h1 onmouseover="scaleUp(this,'30px')" onmouseout="scaleUp(this,'20px')">Registracija</h1>
+          <form name='registracija' onSubmit="return validation();" >
+
+          <input type="text" id= "esername" required onfocus="handleOnFocus(this);" placeholder="Korisničko ime" />
+          <input type="email" id="email"  required onfocus="handleOnFocus(this);" placeholder="E-mail" />
+          <input type="password" id="password" name="password"  onfocus="handleOnFocus(this);"placeholder="Lozinka" />
+          
+          <input type="submit" name="submit" value="Potvrdi" />
+        </div>
+        </form>
+
+        <div class="right">
+          <span class="loginwith">Preko<br />drustvenih mreza</span>
+          <button class="social-signin facebook"> Facebook-a</button>
+          <button class="social-signin instagram"> Instagram-a</button>
+          <button class="social-signin google">Google-a</button>
+        </div>
+        <div class="or">ILI</div>
+      </div>
+
+
+</body>
+
+</html>

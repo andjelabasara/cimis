@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    background-color: transparent;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.logo img {
+    width: 100px;
+    margin-top: -15px;
+    margin-left: -20px;
+}
+
+header{
+    display: flex;
+    background-color:  #b9fefb;
+    color: #b9fefb;
+    margin: 0;
+    padding-top: 20px;
+    min-height: 60px;
+    max-height: 60px;
+    border-bottom: #000000 4px solid;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+
+}
+
+nav .icon{
+    display: none;
+}
+
+header a{
+    color: #000000;
+    font-size: 16px;
+    text-decoration: none; 
+    text-transform: uppercase;
+}
+
+header a:hover{
+    text-decoration: underline ;
+    color: #ffc400;
+}
+
+header .highlight, header .current a{
+    color: #561463;
+} 
+
+header a.active{
+    background-color: #000000;
+    color: #ffffff;
+} 
+
+
+header ul{
+    margin: 0;
+    padding: 0;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0px 20px 0 20px;
+}
+
+header .logo{
+    float: left;
+    margin-top: 6px;
+    padding-left: 5px;
+}
+
+header .logo h1{
+    margin: 0;
+}
+
+header nav{
+    float: right;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+
+/* ovo se odnosi na samu stranicu */
+#glavniDeo{
+    min-height: 670px;
+    background-image: url('../images/rezervacija.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0 -50px;
+    text-align: center;
+    color:  #ffffff;
+    text-shadow: 1px 1px #030000;
+
+}
+#glavniDeo h2{
+    padding-top: 65px;
+    font-size: 45px;
+    color: #b9fefb;
+    text-shadow: -2px 1px #030000;
+}
+
+#glavniDeo .deo1 h4{
+    padding-top: 10px;
+    font-size: 20px;
+    color: #be0307;
+    text-shadow: 1px 1px #000000;
+}
+
+ body .rezervacija{
+    width: 100%;
+    min-height: 20px;
+    margin: 0;
+    display: flex;
+    opacity: 0.9;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+#glavniDeo .deo1{
+    width: 30%;
+    margin-top: 50px;
+    margin-left: 50px;
+    word-wrap: normal;
+}
+
+
+#forma{
+    background-color: #df7b38;
+    float: left;
+    
+}
+
+#glavniDeo .deo2{
+    flex: 1;
+    padding-top: 65px;
+    margin-top: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+/* input[type="submit"],
+input[type="reset"]{
+    margin-top: 28px;
+    width: 120px;
+    height: 32px;
+    background: #76a3f8;
+    border: none;
+    border-radius: 2px;
+    color: #be0303;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.1s ease;
+    cursor: pointer;
+  } */
+
+
+/* ovo je za kontakt */
+ .box{
+    position: relative;
+    width: 600px;
+    max-height: 350px; 
+    background-color: #df7b38;
+    opacity: 0.9;
+    margin: 10px 50px;
+    box-sizing: border-box;
+    display: inline-block;
+    transition: transform 0.5s;
+    flex:auto;
+}
+
+.box h4{
+    padding-top: 65px;
+    font-size: 45px;
+    color: #b9fefb;
+    text-shadow: -2px 1px #030000;
+}
+.box h3{
+    font-size: 20px;
+    color: #be0304;
+    text-shadow: 1px 1px #DEB597;
+
+} 
+

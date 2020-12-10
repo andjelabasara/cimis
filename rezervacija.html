@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cimy | Rezervacija </title>
+    <link rel="shorcut icon" href="images/logo2.ico">
+    <link rel="stylesheet" href="css/rezervacija.css">
+</head>
+<body>
+
+    <!--Header-odnosi na meni i isti je na svakoj strani sajta. Klikom na logo odlazi se na pocetnu stranu sajta-->
+    <header>
+        <div class="container">
+
+            <div class="logo">
+              <a href="index.html"> <img src="images/logo.png" alt="Logo">
+            </a> 
+            </div>
+
+            <nav class="nav">
+                <ul class="lista">
+                    <li ><a href="index.html">pocetna</a></li>
+                    <li><a href="info.html">ko smo mi?</a></li>
+                    <li><a href="meni.html">meni</a></li>
+                    <li class="current"><a href="rezervacija.html">rezervacija</a> </li>
+                    <li><a href="registracija.html">registracija</a> </li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+
+    <!--Glavni content-->
+    <div id="glavniDeo">
+        <h2>Rezervacija mesta</h2>
+        <div class="rezervacija">
+            <div class="deo1" id="forma">
+                <h4>Forma za rezervaciju</h4>
+                <form action="">
+                    <label for="checkbox">Odaberite mesto koje zelite da rezervisete:</label><br>
+                    <input type="radio" name="tip_stola" value="jedan">Obican sto za pice<br>
+                    <input type="radio" name="tip_stola" value="drugi">Sto za pice u basti<br>
+                    <input type="radio" name="tip_stola" value="treci">Sto za rucavanje<br>
+                    <input type="radio" name="tip_stola" value="cetvrti">Sto za rucavanje u basti<br>
+                    <input type="radio" name="tip_stola" value="peti">Sank<br>
+                    <label for="text">Na koje ime je rezervacija?</label>
+                    <input type="text" name="ime"><br>
+                    <label for="datetime-local">Odaberite datum i vreme:</label>
+                    <input type="datetime-local" name="vreme"><br>
+                    <label for="text">Za koliko osoba?</label>
+                    <input type="text" name="brojOsoba"><br>
+                    <label for="text"> Ukoliko imate jos neki zahtev napisite nam ovde:</label>
+                    <textarea rows="4" cols="50"></textarea> <br/>
+                    <input type="reset" value="Resetuj">
+                    <input type="submit" value="Rezerviši"><br>
+                </form>
+            </div>
+
+
+            <div class="deo2">
+                <h4>Gde nas jos mozete kontaktirati? </h4>
+                    <div class="box">
+                        <h3>Drustvene mreze</h3>
+                            <p> Facebook: <a href="https://www.facebook.com">  Cimy's place</a></p>  <br>
+                            <p> Instagram: <a href="https://www.instagram.com"> Cimy's magic</a></p>
+                        <h3>Kontakt</h3>
+                            <p> Telefon: <a href="tel:0699999999"> 0699999999</a></p>  <br>
+                            <p> Email: <a href="mailto:cimy@gmail.rs"> cimy@gmail.rs</a></p>  <br>
+                            <p style="margin-top: 10px;">A gde se nalazimo?</p>
+                            <a href="https://www.google.rs/maps/place/Miners+Pub/@44.8225329,20.4527441,17.3z/data=!4m8!1m2!2m1!1skalemegdan+!3m4!1s0x475a654a5cd785ab:0xe3a0945556364e6a!8m2!3d44.8237128!4d20.4570928" target="_blank"><img src="images/lokacija.png" height="100px" alt="location"></a>
+                        </div>
+                    </div> 
+                
+            
+            </div>
+
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
